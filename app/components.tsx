@@ -103,7 +103,7 @@ export function CertLink(
     return (
         <a style={{gridArea: gridArea, order: order}} className="transition-transform scale-100 hover:scale-105" href={href} target="_blank">
             <div className="xl:grid grid-cols-1 grid-rows-1 relative h-fit">
-                <img style={{gridArea: "1 / 1 / 2 / 2"}} src={isHrefSame ? href : (imageHref ?? "")} alt={name} className="static w-full h-fit" />
+                <img style={{gridArea: "1 / 1 / 2 / 2"}} src={isHrefSame ? href : (imageHref ?? "")} alt={name} className="static w-full h-fit rounded" />
                 <p style={{gridArea: "1 / 1 / 2 / 2"}} className="xl:absolute bottom-[0.5dvw] bg-gray-900/90 w-full p-4">{name}</p>
             </div>
         </a>
