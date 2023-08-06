@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'LINE Seed';
+  src: url('/font/LINESeedSansTH_W_Th.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'LINE Seed';
+  src: url('/font/LINESeedSansTH_W_Rg.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'LINE Seed';
+  src: url('/font/LINESeedSansTH_W_Bd.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'LINE Seed';
+  src: url('/font/LINESeedSansTH_W_XBd.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'LINE Seed';
+  src: url('/font/LINESeedSansTH_W_He.woff2') format('woff2');
+  font-weight: 800;
+}
+
+.cursor::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #fff;
+  animation: cursor 0.6s linear infinite alternate;
+  will-change: opacity;
+}
+
+@keyframes cursor {
+  0%, 40% {
+    opacity: 1;
+  }
+
+  60%, 100% {
+    opacity: 0;
+  }
+}
