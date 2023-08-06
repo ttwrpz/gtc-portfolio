@@ -1,5 +1,4 @@
 import {CertLink, ContactNowCircle, FacebookIcon, GithubIcon, InstagramIcon, LinkRef} from "@/app/components";
-import Image from "next/image";
 import React from "react";
 
 export default function Home() {
@@ -164,31 +163,15 @@ export default function Home() {
                         </div>
                         <ContactNowCircle/>
                     </div>
-                    <div className="flex flex-col xl:grid grid-cols-3 grid-rows-3 gap-6 max-w-xl xl:max-w-none mx-auto">
-                        <a style={{gridArea: "1 / 1 / 3 / 2", order: 3}}
-                           className="transition-transform scale-100 hover:scale-105" href="https://oit.debsirin.ac.th/"
-                           target="_blank">
-                            <div className="grid grid-cols-1 grid-rows-1 relative min-h-[50em]">
-                                <Image style={{gridArea: "1 / 1 / 2 / 2"}} src="/img/project/debsirin-oit.png"
-                                       alt="Debsirin OIT" fill={true} className="object-cover object-top"/>
-                                <p style={{gridArea: "1 / 1 / 2 / 2"}}
-                                   className="absolute bottom-[0.5dvw] bg-gray-900/90 w-full p-4">Debsirin OIT</p>
-                            </div>
-                        </a>
-                        <CertLink order={2} name="งานศิลปหัตถกรรมนักเรียนครั้งที่ 70" href="/img/cert/Sillapa70.png"
-                                  gridArea={"1 / 2 / 2 / 3"}/>
-                        <CertLink order={4} name="KMiTL x 42Bangkok April Discovery Piscine 2023" href="/img/cert/42bangkok.png"
-                                  gridArea={"1 / 3 / 2 / 4"}/>
+                    <div className="flex flex-col xl:grid grid-cols-[repeat(3,_auto)] gap-6 max-w-xl xl:max-w-7xl mx-auto">
                         <CertLink order={1} name="Developer of Debsirin Mobile Cardstunt"
                                   href="https://play.google.com/store/apps/details?id=com.debsirin.mobilecardstunt"
-                                  gridArea={"2 / 2 / 3 / 4"} isHrefSame={false}
+                                  gridArea={"1 / 2 / 1 / 4"} isHrefSame={false}
                                   imageHref="/img/project/debsirin-mobile-cardstunt.png"/>
-                        <CertLink order={5} name="IT Ladkrabang: Open House 2022" href="/img/cert/IT-KMITL.png"
-                                  gridArea={"3 / 1 / 4 / 2"}/>
-                        <CertLink order={6} name="Change Education: Engineering to Go" href="/img/cert/EtG1-CoPE-5.png"
-                                  gridArea={"3 / 2 / 4 / 3"}/>
-                        <CertLink order={7} name="Jknowledge: Thailand University Expo 2022" href="/img/cert/JKnowledge.png"
-                                  gridArea={"3 / 3 / 4 / 4"}/>
+                        <CertLink order={2} name="งานศิลปหัตถกรรมนักเรียนครั้งที่ 70" href="/img/cert/Sillapa70.png"
+                                  gridArea={"2 / 2 / 2 / 3"}/>
+                        <CertLink order={3} name="KMiTL x 42Bangkok April Discovery Piscine 2023" href="/img/cert/42bangkok.png"
+                                  gridArea={"2 / 3 / 2 / 4"}/>
                     </div>
                 </section>
                 <hr className="mx-12 border-gray-400/40 border-t-[5px] rounded"/>
