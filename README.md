@@ -23,4 +23,4 @@ This a project developed for *Portfolio Website Project for GTC: Web Design Skil
 
 ## Demo
 
-Please visit at [https://gtc.ttwrpz.xyz/](https://gtc.ttwrpz.xyz/) for the demo.
+No longer available
